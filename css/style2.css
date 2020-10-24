@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+.redBox {
+	margin: 0 0 18px 0;
+	padding: 7px;
+	border: 1px solid #ff0000;
+	overflow: auto;
+	color: #FF0000;
+}
+
