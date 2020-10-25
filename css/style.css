@@ -27,14 +27,18 @@ h1, h2, h3, h4, h5, h6	{font-weight: normal;}
 border-style:none;
 	text-decoration: none;}
 
-.header .logo	{margin: 0 10px 0 0;
+.header .logo	{margin: 0 0px 0 0;
 	border: none;}
 
-.header .logoImg	{float: left;}
+.header .logoImg	{
+	margin-left: 4px;
+	float: left;
+}
 
-.header .company	{float: left;
-	margin: 20px;
-	font-size: 24px;
+.header .company	{
+	float: left;
+	margin: 20px 10px;
+	font-size: 27px;
 	font-weight: bold;
 	color: #000;
 	line-height: 1;}
@@ -88,11 +92,11 @@ border-style:none;
 .entry img	{max-width: 100%;
 	height: auto;}
 .entry h1	{margin: 0 0 20px 0;
-	font-size: 22px;
+	font-size: 25px;
 	line-height: 1.2;}
 
 .entry h2	{margin: 0 0 10px 0;
-	font-size: 20px;
+	font-size: 22px;
 	line-height: 1.2;}
 
 .entry h3	{margin: 28px 0 8px 0;
