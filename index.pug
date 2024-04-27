@@ -42,10 +42,14 @@ html(lang="ja")
             .col-md-9
               .row
                 .pt-3
-                  img.img-fluid(src="images/9737721558_2b5d196128_o.jpg")
-              .row
-                .flickr.text-end
-                  a(href="http://www.flickr.com/photos/masahiro_nitta/" target="_blank") Masahiro Nitta's photostream
+                  table
+                    tr
+                      td
+                        img.img-fluid(src="images/9737721558_2b5d196128_o.jpg")
+                    tr
+                      td
+                        .flickr.text-end
+                          a(href="http://www.flickr.com/photos/masahiro_nitta/" target="_blank") Masahiro Nitta's photostream
               .row
                 .new.px-2
                   h3 新着情報
@@ -58,6 +62,12 @@ html(lang="ja")
                       p.title
                         a(href="https://mnitta220.github.io/bnan/") 文章暗記
                         | の Version 1.09 をリリースしました。
+                    li
+                      time(datetime="2024-04-24") 2024.04.24
+                      p.title
+                        | Qiita に、「
+                        a(href="https://qiita.com/mnitta220/items/82561200ff31c5cb78f3" target="_blank") Kubernetes で動く Web システムを Rust で作ってみた
+                        | 」という記事を投稿しました。
 
             .col-md-3
               .submenu.mt-3
