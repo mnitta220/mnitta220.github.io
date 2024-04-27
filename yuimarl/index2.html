@@ -63,7 +63,7 @@
                   <h4>機能</h4>
                   <p>現時点での機能は、以下の通りです。現在、他の機能を開発中です。</p>
                   <ul>
-                    <li>メールアドレスまたはGoogleアカウントでログインする。</li>
+                    <li>メールアドレスまたは Google アカウントでログインする。</li>
                     <li>プロジェクトを登録する。</li>
                     <li>プロジェクトにメンバーを追加する。</li>
                     <li>チケットを登録する。（このシステムでは、プロジェクトで行うタスクを「チケット」として登録します）</li>
@@ -73,7 +73,7 @@
               <div class="row pb-3">
                 <div class="col">
                   <h4>開発情報、動作環境</h4>
-                  <p>Yuimarl のプログラミング言語には、Rust が使用されています。<br>動作環境は Cloud Run、データベースは Firestore、ユーザー認証には Firebase Authが使われています。</p>
+                  <p>Yuimarl のプログラミング言語には、<a href="https://www.rust-lang.org/ja/" target="_blank">Rust</a>&nbsp;が使用されています。<br>アプリケーションの実行環境は Cloud Run、データベースは Firestore、ユーザー認証には Firebase Auth が使われています。</p>
                 </div>
               </div>
               <div class="row pb-3">
@@ -89,35 +89,29 @@
                     <tr>
                       <td rowspan="4">プレゼンテーション層</td>
                       <td>各種Webブラウザ</td>
-                      <td>Firefox、Google Chrome、Safari、Internet Explorer で動作確認済みです。</td>
+                      <td>Google Chrome、Microsoft Edge、Safari、Firefox で動作確認済みです。</td>
                     </tr>
                     <tr>
-                      <td><a href="http://jquery.com/">jQuery</a></td>
-                      <td>JavaScriptライブラリ。</td>
+                      <td><a href="https://github.com/firebase/firebaseui-web" target="_blank">FirebaseUI Auth</a></td>
+                      <td>ユーザー認証のライブラリ</td>
                     </tr>
                     <tr>
-                      <td><a href="http://jqueryui.com/">jQuery UI</a></td>
-                      <td>jQueryを使用したユーザーインターフェースライブラリ。</td>
+                      <td><a href="https://getbootstrap.jp/" target="_blank">Bootstrap</a></td>
+                      <td>フロントエンドツールキット</td>
                     </tr>
                     <tr>
-                      <td><a href="http://ckeditor.com/">CKEditor</a></td>
-                      <td>HTML形式で文章を入力するJavaScriptライブラリ。メモ入力画面で使用。</td>
+                      <td><a href="http://jquery.com/" target="_blank">jQuery</a></td>
+                      <td>JavaScriptライブラリ</td>
                     </tr>
                     <tr>
-                      <td rowspan="2">アプリケーション層</td>
-                      <td>Java Runtime Environment</td>
-                      <td>Java実行環境。</td>
-                    </tr>
-                    <tr>
-                      <td>Java EEアプリケーションサーバー</td>
-                      <td>Java Platform, Enterprise Edition（Java EE）の動作をサポートする実行環境。<a href="https://glassfish.java.net/">GlassFish</a>、<a href="http://www.payara.fish/">Payara</a>など。</td>
+                      <td>アプリケーション層</td>
+                      <td><a href="https://cloud.google.com/run?hl=ja" target="_blank">Cloud Run</a></td>
+                      <td>アプリケーションを Docker コンテナで実行する Google Cloud 環境</td>
                     </tr>
                     <tr>
                       <td>データアクセス層</td>
-                      <td>各種データベース製品</td>
-                      <td>現在は、<a href="http://www.oracle.com/technetwork/jp/java/javadb/overview/index.html">
-                          Java
-                          DB</a> および<a href="http://www-jp.mysql.com/">MySQL</a>を使用。</td>
+                      <td><a href="https://cloud.google.com/firestore?hl=ja" target="_blank">Firestore</a></td>
+                      <td>Google Cloud のドキュメントデータベース</td>
                     </tr>
                   </table>
                 </div>
@@ -125,7 +119,7 @@
               <div class="row pb-3">
                 <div class="col">
                   <h4>ライセンス</h4>
-                  <p>Yuimarl は、<a href="http://opensource.org/licenses/mit-license.php">MITライセンス</a>（<a href="http://sourceforge.jp/projects/opensource/wiki/licenses/MIT_license">参考日本語訳</a>）の下で公開されています。ご使用に当たっては、このライセンス条項に従ってください。</p>
+                  <p>Yuimarl は、<a href="http://opensource.org/licenses/mit-license.php" target="_blank">MITライセンス</a>（<a href="http://sourceforge.jp/projects/opensource/wiki/licenses/MIT_license" target="_blank">参考日本語訳</a>）の下で公開されています。ソースコードのご使用に当たっては、このライセンス条項に従ってください。</p>
                   <ul>
                     <li>このソフトウェアを誰でも無償で無制限に扱って良いです。ただし、著作権表示および本許諾表示をソフトウェアのすべての複製または重要な部分に記載しなければなりません。</li>
                     <li>作者または著作権者は、ソフトウェアに関してなんら責任を負いません。</li>
@@ -140,8 +134,7 @@
                   <h4>カスタマイズ</h4>
                   <p>
                     Yuimarl のソースコードは、自由に改変することができます。Yuimarl
-                    をベースとして、別のシステムを開発することもできます。<br>		カスタマイズを有限会社ビットファームに依頼される場合は、ご連絡ください。Yuimarl
-                    		に取り込むかを検討させていただきます。内容によっては、有償での対応とさせていただくこともあります。
+                    をベースとして、別のシステムを開発することもできます。<br>カスタマイズを新田システム事務所に依頼される場合は、ご連絡ください。
                   </p>
                 </div>
               </div>
@@ -157,9 +150,7 @@
               <div class="row pb-3">
                 <div class="col">
                   <h4>共同開発者募集</h4>
-                  <p>Yuimarl を共同で開発してくださる企業様、個人様を募集しています。<br>		開発を行うためには、ある程度の技術力が必要です。必要なスキルは、上記「アーキテクチャー」で使用されている技術を使用することができるというものです。初心者レベルでも結構です。<br>		報酬は出せませんので、ボランティアとなります。開発環境はご自身で用意していただき、お好きな時間にご自宅等で開発を行っていただきます。
-                    		社会の役に立つシステムを作ってみたい、開発スキルを向上させたいという方は、ぜひ、ご参加いただれればと思います。<br>		企業様として参加していただければ、それを、貴社としての強みにすることができます。生産性が向上し、競争力が高まります。<br>		参加をご希望される方は、masa.nitta@nifty.ne.jp まで、電子メールでご連絡ください。<br><br>
-                  </p>
+                  <p>Yuimarl を共同で開発してくださる企業または個人の方を募集しています。<br>報酬は出せませんので、ボランティアとなります。開発環境はご自身で用意していただき、お好きな時間にご自宅等で開発を行っていただきます。<br>参加をご希望される方は、masa.nitta@nifty.ne.jp まで、電子メールでご連絡ください。</p>
                 </div>
               </div>
             </div>
