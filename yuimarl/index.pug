@@ -9,49 +9,30 @@ html(lang="ja")
     link(rel="stylesheet" href="../css/style3.css")
   body
     main
-      .row
-        .col-md-1
-        .col.col-md-10
-          .row.py-2
-            .col-auto
-              .logoImg
-                a(href="index.html")
-                  img(src="images/logo.gif" alt="Yuimarl")
+      .container
+        .row
+          .col-md-1
+          .col.col-md-10
+            include includes/logo.pug
+            include includes/nav.pug
 
-          .row.bg-dark.px-2.px-md-0
-            nav.navbar.navbar-expand-md.navbar-dark.sticky-top.px-2
-              button.navbar-toggler(type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content"
-              aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation")
-                span.navbar-toggler-icon
-              .collapse.navbar-collapse#navbar-content
-                ul.navbar-nav.me-auto
-                  li.nav-item.active
-                    a.nav-link(href="index.html") ホーム
+            .row
+              .col-md-9
+                .row.py-3
+                  .col
+                    .alert.alert-danger(role="alert")
+                      | このシステムは、現在、開発中です。
 
-          .row.px-2.px-md-0
-            .col-md-9
-              .row.py-3
-                .col
-                  .alert.alert-danger(role="alert")
-                    | このシステムは、現在、開発中です。
+              .col-md-3
+                .submenu.mt-3
+                  h3 CONTENTS
+                  ul
+                    li
+                      a(href="../index.html") 新田システム事務所
+                    li
+                      a.current(href="index.html") ホーム
 
-            .col-md-3
-              .submenu.mt-3
-                h3 CONTENTS
-                ul
-                  li
-                    a(href="../index.html") 新田システム事務所
-                  li
-                    a.current(href="index.html") ホーム
-
-          .row.bg-dark.px-3
-            footer.py-1.text-light
-              .container.text-center
-                ul.nav.justify-content-center
-                  li.nav-item
-                    a.nav-link(href="../privacy.html") プライバシー・ポリシー
-                p(style="color: #a0a0a0")
-                  small Copyright &copy; 2024 Masahiro Nitta. All Rights Reserved.
-        .col-md-1
+            include includes/footer.pug
+          .col-md-1
 
     script(src="../js/bootstrap.bundle.min.js")

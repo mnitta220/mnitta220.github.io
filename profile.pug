@@ -9,126 +9,97 @@ html(lang="ja")
     link(rel="stylesheet" href="css/style3.css")
   body
     main
-      .row
-        .col-md-1
-        .col.col-md-10
-          .row.pt-2
-            .col-auto
-              .logoImg
-                a(href="index.html")
-                  img(src="images/logo2.png" alt="新田システム事務所")
-            .col-auto
-              .company 新田システム事務所
+      .container
+        .row
+          .col-md-1
+          .col.col-md-10
+            include includes/logo.pug
+            include includes/nav.pug
 
-          .row.bg-dark.px-2.px-md-0
-            nav.navbar.navbar-expand-md.navbar-dark.sticky-top.px-2
-              button.navbar-toggler(type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content"
-              aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation")
-                span.navbar-toggler-icon
-              .collapse.navbar-collapse#navbar-content
-                ul.navbar-nav.me-auto
-                  li.nav-item.active
-                    a.nav-link(href="index.html") ホーム
-                  li.nav-item
-                    a.nav-link(href="profile.html") 事務所概要
-                  li.nav-item
-                    a.nav-link(href="https://github.com/mnitta220/nngb/") 脳内碁盤
-                  li.nav-item
-                    a.nav-link(href="https://mnitta220.github.io/bnan/") 文章暗記
-                  li.nav-item
-                    a.nav-link(href="yuimarl/index.html") Yuimarl
+            .row
+              .col-md-9
+                .row.py-3
+                  .col
+                    h3 事務所概要
+                    table.table.table-bordered
+                      tr
+                        th(bgcolor="#f0f0f0") 名称(屋号)
+                        td(bgcolor="#ffffff") 新田システム事務所（にったしすてむじむしょ）
+                      tr
+                        th(bgcolor="#f0f0f0") 所在地
+                        td(bgcolor="#ffffff") 〒182-0034 東京都調布市下石原3-12-2 ベアーマンション303
+                      tr
+                        th(bgcolor="#f0f0f0") 電話番号
+                        td(bgcolor="#ffffff")
+                          | 042-486-5832
+                          br
+                          | ※ 当事務所へのご連絡は、なるべくメールでお願いいたします。
+                      tr
+                        th(bgcolor="#f0f0f0") メールアドレス
+                        td(bgcolor="#ffffff") masa.nitta@nifty.ne.jp
+                      tr
+                        th(bgcolor="#f0f0f0") 事業内容
+                        td(bgcolor="#ffffff")
+                          | 1. 情報システムのコンサルティング、設計、開発。
+                          br
+                          | 2. コンピューターのソフトウェアの開発及び販売。
+                          br
+                          | 3. インターネットのホームページの企画、制作、管理。
+                      tr
+                        th(bgcolor="#f0f0f0") 代表
+                        td(bgcolor="#ffffff") 新田 雅浩（にった まさひろ）
+                      tr
+                        th(bgcolor="#f0f0f0") 設立
+                        td(bgcolor="#ffffff") 2020年10月1日
+                .row.pb-3
+                  .col
+                    h4 事務所理念
+                    ul
+                      li 社会の安定と人々の幸福のために尽くす。
+                      li 顧客と関係者に最大限の価値と満足を提供する。
+                      li 所員が日々自己を磨き、社会に貢献できる人格と実力を身に付ける。
+                .row.pb-3
+                  .col
+                    h4 得意分野
+                    ul
+                      li 業務用システムおよび一般向けソフトウェアの開発。
+                      li 中小企業の戦略的IT活用支援。
+                .row.pb-3
+                  .col
+                    h4 代表者プロフィール
+                    table
+                      tr
+                        td
+                          img(src="images/profile3.jpg" width="200px" border="0")
+                      tr
+                        td(align="center") 新田 雅浩
+                    ul
+                      li 1965年　岩手県出身。
+                      li
+                        | 1987年からシステム開発業界に入る。以来、官公庁、銀行、保険、病院、製造、海運、電力、広告など、大小40以上の各種業務システムの開発に携わる。
+                      li 1989年　第二種情報処理技術者の資格を取得。
+                      li 1990年　第一種情報処理技術者の資格を取得。
+                      li 2004年　有限会社ビットファーム設立。
+                      li 2007年　ITコーディネータの資格を取得。
+                      li 2019年　有限会社ビットファーム解散。
+                      li 2020年　新田システム事務所設立。
 
-          .row.px-2.px-md-0
-            .col-md-9
-              .row.py-3
-                .col
-                  h3 事務所概要
-                  table.table.table-bordered
-                    tr
-                      th(bgcolor="#f0f0f0") 名称(屋号)
-                      td(bgcolor="#ffffff") 新田システム事務所（にったしすてむじむしょ）
-                    tr
-                      th(bgcolor="#f0f0f0") 所在地
-                      td(bgcolor="#ffffff") 〒182-0034 東京都調布市下石原3-12-2 ベアーマンション303
-                    tr
-                      th(bgcolor="#f0f0f0") 電話番号
-                      td(bgcolor="#ffffff")
-                        | 042-486-5832
-                        br
-                        | ※ 当事務所へのご連絡は、なるべくメールでお願いいたします。
-                    tr
-                      th(bgcolor="#f0f0f0") メールアドレス
-                      td(bgcolor="#ffffff") masa.nitta@nifty.ne.jp
-                    tr
-                      th(bgcolor="#f0f0f0") 事業内容
-                      td(bgcolor="#ffffff")
-                        | 1. 情報システムのコンサルティング、設計、開発。
-                        br
-                        | 2. コンピューターのソフトウェアの開発及び販売。
-                        br
-                        | 3. インターネットのホームページの企画、制作、管理。
-                    tr
-                      th(bgcolor="#f0f0f0") 代表
-                      td(bgcolor="#ffffff") 新田 雅浩（にった まさひろ）
-                    tr
-                      th(bgcolor="#f0f0f0") 設立
-                      td(bgcolor="#ffffff") 2020年10月1日
-              .row.pb-3
-                .col
-                  h4 事務所理念
+              .col-md-3
+                .submenu.mt-3
+                  h3 CONTENTS
                   ul
-                    li 社会の安定と人々の幸福のために尽くす。
-                    li 顧客と関係者に最大限の価値と満足を提供する。
-                    li 所員が日々自己を磨き、社会に貢献できる人格と実力を身に付ける。
-              .row.pb-3
-                .col
-                  h4 得意分野
-                  ul
-                    li 業務用システムおよび一般向けソフトウェアの開発。
-                    li 中小企業の戦略的IT活用支援。
-              .row.pb-3
-                .col
-                  h4 代表者プロフィール
-                  table
-                    tr
-                      td
-                        img(src="images/profile3.jpg" width="200px" border="0")
-                    tr
-                      td(align="center") 新田 雅浩
-                  ul
-                    li 1965年　岩手県出身。
                     li
-                      | 1987年からシステム開発業界に入る。以来、官公庁、銀行、保険、病院、製造、海運、電力、広告など、大小40以上の各種業務システムの開発に携わる。
-                    li 1989年　第二種情報処理技術者の資格を取得。
-                    li 1990年　第一種情報処理技術者の資格を取得。
-                    li 2004年　有限会社ビットファーム設立。
-                    li 2007年　ITコーディネータの資格を取得。
-                    li 2019年　有限会社ビットファーム解散。
-                    li 2020年　新田システム事務所設立。
+                      a(href="index.html") ホーム
+                    li
+                      a.current(href="profile.html") 事務所概要
+                    li
+                      a(href="https://github.com/mnitta220/nngb/") 脳内碁盤
+                    li
+                      a(href="https://mnitta220.github.io/bnan/") 文章暗記
+                    li
+                      a(href="yuimarl/index.html") Yuimarl
 
-            .col-md-3
-              .submenu.mt-3
-                h3 CONTENTS
-                ul
-                  li
-                    a(href="index.html") ホーム
-                  li
-                    a.current(href="profile.html") 事務所概要
-                  li
-                    a(href="https://github.com/mnitta220/nngb/") 脳内碁盤
-                  li
-                    a(href="https://mnitta220.github.io/bnan/") 文章暗記
-                  li
-                    a(href="yuimarl/index.html") Yuimarl
-
-          .row.bg-dark.px-3
-            footer.py-1.text-light
-              .container.text-center
-                ul.nav.justify-content-center
-                  li.nav-item
-                    a.nav-link(href="privacy.html") プライバシー・ポリシー
-                p(style="color: #a0a0a0")
-                  small Copyright &copy; 2024 Masahiro Nitta. All Rights Reserved.
-        .col-md-1
+            include includes/footer.pug
+          .col-md-1
 
     script(src="js/bootstrap.bundle.min.js")

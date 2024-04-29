@@ -9,87 +9,60 @@ html(lang="ja")
     link(rel="stylesheet" href="css/style3.css")
   body
     main
-      .row
-        .col-md-1
-        .col.col-md-10
-          .row.pt-2
-            .col-auto
-              .logoImg
-                a(href="index.html")
-                  img(src="images/logo2.png" alt="新田システム事務所")
-            .col-auto
-              .company 新田システム事務所
+      .container
+        .row
+          .col-md-1
+          .col.col-md-10
+            include includes/logo.pug
+            include includes/nav.pug
 
-          .row.bg-dark.px-2.px-md-0
-            nav.navbar.navbar-expand-md.navbar-dark.sticky-top.px-2
-              button.navbar-toggler(type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content"
-              aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation")
-                span.navbar-toggler-icon
-              .collapse.navbar-collapse#navbar-content
-                ul.navbar-nav.me-auto
-                  li.nav-item
-                    a.nav-link(href="index.html") ホーム
-                  li.nav-item.active
-                    a.nav-link(href="profile.html") 事務所概要
-                  li.nav-item
-                    a.nav-link(href="https://github.com/mnitta220/nngb/") 脳内碁盤
-                  li.nav-item
-                    a.nav-link(href="https://mnitta220.github.io/bnan/") 文章暗記
-                  li.nav-item
-                    a.nav-link(href="yuimarl/index.html") Yuimarl
+            .row
+              .col-md-9
+                .row
+                  .pt-3
+                    table
+                      tr
+                        td
+                          img.img-fluid(src="images/9737721558_2b5d196128_o.jpg")
+                      tr
+                        td
+                          .flickr.text-end
+                            a(href="http://www.flickr.com/photos/masahiro_nitta/" target="_blank") Masahiro Nitta's photostream
+                .row
+                  .new.px-2
+                    h3 新着情報
+                    ul
+                      li
+                        time(datetime="2020-10-01") 2020.10.01
+                        p.title 新田システム事務所を設立しました。
+                      li
+                        time(datetime="2021-04-07") 2021.04.07
+                        p.title
+                          a(href="https://mnitta220.github.io/bnan/") 文章暗記
+                          | の Version 1.09 をリリースしました。
+                      li
+                        time(datetime="2024-04-07") 2024.04.07
+                        p.title
+                          | Qiita に、「
+                          a(href="https://qiita.com/mnitta220/items/82561200ff31c5cb78f3" target="_blank") Kubernetes で動く Web システムを Rust で作ってみた
+                          | 」という記事を投稿しました。
 
-          .row.px-2.px-md-0
-            .col-md-9
-              .row
-                .pt-3
-                  table
-                    tr
-                      td
-                        img.img-fluid(src="images/9737721558_2b5d196128_o.jpg")
-                    tr
-                      td
-                        .flickr.text-end
-                          a(href="http://www.flickr.com/photos/masahiro_nitta/" target="_blank") Masahiro Nitta's photostream
-              .row
-                .new.px-2
-                  h3 新着情報
+              .col-md-3
+                .submenu.mt-3
+                  h3 CONTENTS
                   ul
                     li
-                      time(datetime="2020-10-01") 2020.10.01
-                      p.title 新田システム事務所を設立しました。
+                      a.current(href="index.html") ホーム
                     li
-                      time(datetime="2021-04-07") 2021.04.07
-                      p.title
-                        a(href="https://mnitta220.github.io/bnan/") 文章暗記
-                        | の Version 1.09 をリリースしました。
+                      a(href="profile.html") 事務所概要
                     li
-                      time(datetime="2024-04-07") 2024.04.07
-                      p.title
-                        | Qiita に、「
-                        a(href="https://qiita.com/mnitta220/items/82561200ff31c5cb78f3" target="_blank") Kubernetes で動く Web システムを Rust で作ってみた
-                        | 」という記事を投稿しました。
+                      a(href="https://github.com/mnitta220/nngb/") 脳内碁盤
+                    li
+                      a(href="https://mnitta220.github.io/bnan/") 文章暗記
+                    li
+                      a(href="yuimarl/index.html") Yuimarl
 
-            .col-md-3
-              .submenu.mt-3
-                h3 CONTENTS
-                ul
-                  li
-                    a(href="profile.html") 事務所概要
-                  li
-                    a(href="https://github.com/mnitta220/nngb/") 脳内碁盤
-                  li
-                    a(href="https://mnitta220.github.io/bnan/") 文章暗記
-                  li
-                    a(href="yuimarl/index.html") Yuimarl
-
-          .row.bg-dark.px-3
-            footer.py-1.text-light
-              .container.text-center
-                ul.nav.justify-content-center
-                  li.nav-item
-                    a.nav-link(href="privacy.html") プライバシー・ポリシー
-                p(style="color: #a0a0a0")
-                  small Copyright &copy; 2024 Masahiro Nitta. All Rights Reserved.
-        .col-md-1
+            include includes/footer.pug
+          .col-md-1
 
     script(src="js/bootstrap.bundle.min.js")
